@@ -1,0 +1,28 @@
+bottomNavigationBar: const GNav(
+        gap: 8,
+        onTabChange:,
+        tabs: [
+          GButton(
+            icon: Icons.home,
+            text: "Home",
+          ),
+          GButton(
+            icon: Icons.restaurant_menu,
+            text: "Menu",
+          ),
+          GButton(
+            icon: Icons.shopping_bag,
+            text: "Basket",
+          ),
+          GButton(
+            icon: Icons.settings,
+            text: "Settings",
+            ),
+        ],
+      ),
+
+      Expanded(child: ListView.builder(
+          itemCount: 5,
+          itemBuilder: (context,index){
+          return MyTile();
+        }),),
